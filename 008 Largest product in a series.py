@@ -46,18 +46,20 @@ number = "73167176531330624919225119674426574742355349194934\
 05886116467109405077541002256983155200055935729725\
 71636269561882670428252483600823257530420752963450"
 
+
 def get_product_of_digits(digits):
     product = 1
     for digit in digits:
         product *= int(digit)
     return product
 
+
 max_product = 0
 for i in range(len(number)):
-    if '0' in number[i:i+13]:
+    if '0' in number[i:i + 13]:
         i += 13
         continue
-    product = get_product_of_digits(number[i:i+13])
+    product = get_product_of_digits(number[i:i + 13])
     if product > max_product:
         max_product = product
 print(max_product)

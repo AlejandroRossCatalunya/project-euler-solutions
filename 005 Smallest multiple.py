@@ -5,10 +5,10 @@ What is the smallest positive number that is evenly divisible by all of the numb
 '''
 
 result = 2520
-for dividor in range(11, 21):
-    if result % dividor:
-        gcd = dividor // 2
-        while (result % gcd) or (dividor % gcd):
+for divisor in range(11, 21):
+    if result % divisor:
+        gcd = divisor // 2
+        while (result % gcd) or (divisor % gcd):
             gcd -= 1
-        result *= dividor // gcd
+        result *= divisor // gcd
 print(result)

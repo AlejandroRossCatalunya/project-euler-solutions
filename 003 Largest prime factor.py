@@ -4,10 +4,10 @@ What is the largest prime factor of the number 600851475143?
 '''
 
 number = 600851475143
-dividor = 3
+divisor = 3
 while number != 1:
-    if number % dividor == 0:
-        while number % dividor == 0:
-            number //= dividor
-    dividor += 2
-print(dividor - 2)
+    if number % divisor == 0:
+        while number % divisor == 0:
+            number //= divisor
+    divisor += 2
+print(divisor - 2)
